@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.21"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnPunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickPunch"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickHistory"
+        android:text="@string/view_history"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnSelectPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickSelectPeriod"
+        android:text="@string/total_hours"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/btnEraseHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickDeleteHistory"
+        android:text="@string/delete_history" />
+
+</LinearLayout>
